@@ -1,1 +1,5 @@
-show.html.erb
+<h1><%= @item.name %></h1>
+<p><%= @item.description %></p>
+<% image_tag @item.image %>
+
+<%= link_to "Edit", edit_item_path(@item) %>

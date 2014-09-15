@@ -1,0 +1,11 @@
+<% @items.each do |item| %>
+  <section>
+    <h3><%= link_to item.name, item %></h3>
+    <p>
+      <%= item.classification %>
+    </p>
+<!--     <p>
+      <% image_tag item.image %>
+    </p> -->
+  </section>
+<% end %>

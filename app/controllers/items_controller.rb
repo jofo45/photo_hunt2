@@ -41,6 +41,20 @@ class ItemsController < ApplicationController
   end
 
   def item_params
-    params.require('item').permit(:name)
+    params.require(:item).permit(:name, :classification, :brand, :url_link, :product_id, :image, :price_web)
   end
+
+    # def apartment_params
+    #   params.require(:apartment).permit(:name, :price, :address, :occupied)
+
+    # t.string   "name"
+    # t.string   "classification"
+    # t.string   "brand"
+    # t.string   "url_link"
+    # t.string   "product_id"
+    # t.string   "image"
+    # t.integer  "price_web"
+    # t.datetime "created_at"
+    # t.datetime "updated_at"
+
 end

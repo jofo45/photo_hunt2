@@ -27,8 +27,17 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'devise'
+
+gem 'omniauth'
+gem 'omniauth-instagram'
+
+gem 'instagram', :git => 'git://github.com/Instagram/instagram-ruby-gem.git'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+#creates environment which can be used to store keys/secrets.
+gem "figaro"
+
 
 # Use unicorn as the app server
 # gem 'unicorn'
